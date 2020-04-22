@@ -3,7 +3,7 @@
 ![Java CI with Maven](https://github.com/smzerehpoush/spring-boot_prometheus_grafana/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 
-This Repository integrates SpringBoot + Prometheus + Grafana
+This Repository integrates SpringBoot v2.* + Prometheus + Grafana
 
 ## Step 1 : run spring boot application
 
