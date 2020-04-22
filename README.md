@@ -10,6 +10,33 @@ This Repository integrates SpringBoot v2.* + Prometheus + Grafana
 i provided a script ```build.sh``` to simply create package and run application.
 deafult port is 8088
 
+
+in exesting projects add these maven dependencies
+```xml
+
+<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+        
+<dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+</dependency>
+        
+<dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+</dependency>
+```
+ and add these configurations to application.yml
+```
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+``` 
 ## Step 2 : integerate Prometheus 
 
 ```
