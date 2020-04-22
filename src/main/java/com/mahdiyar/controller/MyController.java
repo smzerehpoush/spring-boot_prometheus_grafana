@@ -1,4 +1,4 @@
-package com.mahdiyar;
+package com.mahdiyar.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
