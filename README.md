@@ -22,7 +22,7 @@ docker run -d --name prometheus -p 9090:9090 \
 -v PATH_TO_PROJECT/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 ```
 
-Step 3 : integrate Grafana
+## Step 3 : integrate Grafana
 
 ```
 docker pull grafana/grafana
