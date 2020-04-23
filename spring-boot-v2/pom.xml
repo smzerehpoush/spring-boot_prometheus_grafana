@@ -7,7 +7,7 @@
         <groupId>com.mahdiyar</groupId>
         <artifactId>simple-spring-boot-prometheus-grafana</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>..</relativePath>
     </parent>
 
     <artifactId>simple-spring-boot-v2-prometheus-grafana</artifactId>
@@ -17,6 +17,7 @@
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <java.version>1.8</java.version>
         <lombok.version>1.18.12</lombok.version>
+        <springboot.version>2.2.2.RELEASE</springboot.version>
     </properties>
 
     <dependencyManagement>
@@ -25,7 +26,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.2.2.RELEASE</version>
+                <version>${springboot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -71,7 +72,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.2.RELEASE</version>
+                <version>${springboot.version}</version>
                 <configuration>
                     <mainClass>com.mahdiyar.Application</mainClass>
                 </configuration>

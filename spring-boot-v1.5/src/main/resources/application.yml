@@ -1,0 +1,11 @@
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus:
+        pushgateway:
+          enabled: true
+    enable: true
+server:
+  port: 8088

@@ -8,8 +8,12 @@
     <artifactId>simple-spring-boot-prometheus-grafana</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
+        <java.version>1.8</java.version>
         <version>1.0-SNAPSHOT</version>
     </properties>
+
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-v2</module>
